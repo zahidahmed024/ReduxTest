@@ -10,7 +10,7 @@ export default class App extends Component {
     super(props);
     this.state = {
     };
-    console.log('main :', Store.getState());
+    // console.log('App container :', Store.getState());
     
   }
 
