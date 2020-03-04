@@ -6,7 +6,7 @@ const combineReducers = redux.combineReducers;
 //Initial State
 const initialState = {
     counter: 0,
-    name: 'Milon'
+    name: ['Milon']
 };
 
 const otherInitialState = {
@@ -18,7 +18,8 @@ const firstReducer = (state = initialState, action) => {
     if (action.type === 'INC_COUNTER') {
         return {
             ...state,
-            counter: state.counter + 1
+            counter: state.counter + 1,
+            name:[...state.name,action.name]
         }
     }
 

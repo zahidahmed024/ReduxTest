@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
-import Todos from './TodoList/Todos';
 import Store from './Redux/Store'
+import Todos from './TodoList/Todos';
+
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
+// import TestingStore from './Redux/TestingStore';
+// import TestTodos from './TodoList/TestTodos';
 
 export default class App extends Component {
   constructor(props) {
@@ -17,7 +20,7 @@ export default class App extends Component {
   render() {
     return (
       <Provider store={Store}>
-        <Todos />
+        <Todos/>
       </Provider>
     );
   }
